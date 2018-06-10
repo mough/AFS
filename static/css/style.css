@@ -891,12 +891,12 @@ input::-ms-input-placeholder {
 .single_message_right_info li{
     margin-bottom: 20px;
 }
-.single_message_right_info li a{
+/* .single_message_right_info li a{
     color: #fff;
     font-size: 1.8125rem;
     padding-bottom: 2px;
     display: inline-block;
-}
+} */
 .single_message_right_info li a i{
     padding-right: 10px;
     font-size:1.875rem;
