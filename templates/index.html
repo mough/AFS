@@ -31,6 +31,18 @@
         <link rel="stylesheet" href="../static/css/custom.css" />
 
         <script src="../static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script type="text/javascript" language="JavaScript">
+        window.onload = function () {
+            var username = "dan";
+
+            var hostname = "activefibersolutions.com";
+
+            var linktext = username + "@" + hostname ;
+            <!--document.getElementById("emailaddy").innerText = username + "@" + hostname;-->
+            document.getElementById("emailaddy").setAttribute("href", "mail" + "to:" + username + "@" + hostname);
+
+            };
+      </script>
     </head>
     <body data-spy="scroll" data-target=".navbar-collapse">
         <!--[if lt IE 8]>
@@ -62,8 +74,9 @@
                                         <ul class="nav navbar-nav navbar-right">
                                             <li><a href="#home">Home</a></li>
                                             <li><a href="#service">Services</a></li>
-                                            <li><a href="#choose">Technology</a></li>
-                                            <li><a href="#portfolio">Portfolio</a></li>
+                                            <!--<li><a href="#choose">Industry Partnerships</a></li>-->
+                                            <!--<li><a href="#portfolio">Portfolio</a></li>-->
+                                            <!--<li><a href="#counter">About Us</a></li>-->
                                             <li><a href="#contact">Contact</a></li>
                                         </ul>
                                     </div>
@@ -87,26 +100,31 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 ">
-                            <div class="main_home_slider text-center">
-                                <div class="single_home_slider">
-                                    <div class="main_home wow fadeInUp" data-wow-duration="500ms">
+                            <!-- <div class="main_home_slider text-center">
+                                <div class="single_home_slider"> -->
+                                    <div class="main_home">
                                         <h1>Active Fiber Solutions</h1>
                                         <p class="subtitle">Advanced fiber optic network design</p>
+                                        <p class="subtitle_small">
+                                            Active Fiber Solutions is a telecommunications design and consulting firm specializing in custom fiber optic network design and engineering. 
+                                            Our comprehensive and full-range services, in addition to the utilization of MicroTechnology and FuturePath® architecture, 
+                                            allow Active Fiber Solutions to design and deploy the most innovative and cost-effective FTTx solutions to meet new build and future expansion needs. 
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="single_home_slider">
-                                    <div class="main_home wow fadeInUp" data-wow-duration="500ms">
-                                        <h1>High reliability.</h1>
-                                        <p class="subtitle">Low installation cost.</p>
-                                    </div>
-                                </div>
-                                <div class="single_home_slider">
-                                    <div class="main_home wow fadeInUp" data-wow-duration="500ms">
-                                        <h1>Description_2</h1>
-                                        <p class="subtitle">Sub_Description_2</p>
-                                    </div>
-                                </div>
-                            </div>
+                                <!-- </div> -->
+                                <!--<div class="single_home_slider">-->
+                                    <!--<div class="main_home wow fadeInUp" data-wow-duration="500ms">-->
+                                        <!--<h1>High reliability.</h1>-->
+                                        <!--<p class="subtitle">Low installation cost.</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="single_home_slider">-->
+                                    <!--<div class="main_home wow fadeInUp" data-wow-duration="500ms">-->
+                                        <!--<h1>Description_2</h1>-->
+                                        <!--<p class="subtitle">Sub_Description_2</p>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!-- </div> -->
                         </div>
                     </div>
                 </div>
@@ -123,9 +141,7 @@
                     <div class="main_service_area sections"> 
                         <div class="col-sm-6">
                             <div class="signle_service_left">
-                                <h2>What
-                                    We 
-                                    Do</h2>
+                                <h2>Services</h2>
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -136,8 +152,8 @@
                                     </div>
                                     <div class="single_service_content">
                                         <h3>Consulting</h3>
-                                        <p>Blurb_1</p>
-                                        <p>We can change the heading of these sections. This is where we can describe AFS specializations.</p>
+                                        <p>Network architecture comparisons, specialty fiber deployments,
+                                            brownfield deployments, network expansion, troubleshooting</p>
                                     </div>
                                 </div>
                                 <div class="single_service">
@@ -146,7 +162,9 @@
                                     </div>
                                     <div class="single_service_content">
                                         <h3>Planning</h3>
-                                        <p>Blurb_2</p>
+                                        <p>Route selection and feasibility, network design, full cost analysis,
+                                            bid preparation and review, materials evaluation (bill of materials),
+                                            project management, central office design</p>
                                     </div>
                                 </div>
                                 <div class="single_service">
@@ -154,17 +172,10 @@
                                         <i class="lnr lnr-picture"></i>
                                     </div>
                                     <div class="single_service_content">
-                                        <h3>Engineering</h3>
-                                        <p>Blurb_3</p>
-                                    </div>
-                                </div>
-                                <div class="single_service">
-                                    <div class="single_service_icon">
-                                        <i class="lnr lnr-laptop-phone"></i>
-                                    </div>
-                                    <div class="single_service_content">
-                                        <h3>Heading_4</h3>
-                                        <p>Blurb_4</p>
+                                        <h3>Design Engineering</h3>
+                                        <p>Full CAD and GIS services, fiber optic systems testing, contractor management and oversight
+                                            For more information about Active Fiber Solutions and how we can meet your FTTx needs,
+                                            please call (608) 609-0190 or visit our Contact Us page. (hyperlink text to Contact Us page)</p>
                                     </div>
                                 </div>
                             </div>
@@ -175,236 +186,239 @@
         </section>
 
 
-        <section id="choose" class="choose">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="main_choose_area sections">
-                        <div class="col-sm-7 col-sm-offset-1">
-                            <div class="main_choose_content text-left">
-                                <div class="single_choose_content">
-                                    <h1>Construction Techniques & Products</h1>
-                                    <p>TODO: Need to know what we want to display here. Photos? Just Text?</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--<section id="choose" class="choose">-->
+            <!--<div class="container-fluid">-->
+                <!--<div class="row">-->
+                    <!--<div class="main_choose_area sections">-->
+                        <!--<div class="col-sm-7 col-sm-offset-1">-->
+                            <!--<div class="main_choose_content text-left">-->
+                                <!--<div class="single_choose_content">-->
+                                    <!--<h1>Industry Partnerships</h1>-->
+                                    <!--<p>Industry_Partnerships_Blurb1</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
 
 
-        <section id="portfolio" class="portfolio">
-            <div class="lightbox-target" id="prj1">
-                <img src="../static/images/prj1.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj2">
-                <img src="../static/images/prj2.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj3">
-                <img src="../static/images/prj3.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj4">
-                <img src="../static/images/prj4.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj5">
-                <img src="../static/images/prj5.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj6">
-                <img src="../static/images/prj6.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj7">
-                <img src="../static/images/prj7.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="lightbox-target" id="prj8">
-                <img src="../static/images/prj8.PNG"/>
-                <a class="lightbox-close" href="#portfolio"></a>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_mix_content text-center sections">
-                        <div class="head_title">
-                            <h2>What We've Done</h2>
-                            <p>Examples of completed projects</p>
-                        </div>
-                        <div class="main_mix_menu">
-                            <ul>
-                                <li class="btn btn-primary filter" data-filter="all">All</li>
-                                <li class="btn btn-primary filter" data-filter=".cat1">Category_1</li>
-                                <li class="btn btn-primary filter" data-filter=".cat2">Category_2</li>
-                                <li class="btn btn-primary filter" data-filter=".cat3">Category_3</li>
-                                <li class="btn btn-primary filter" data-filter=".cat4">Category_4</li>
-                            </ul>
-                        </div>
+        <!--<section id="portfolio" class="portfolio">-->
+            <!--<div class="lightbox-target" id="prj1">-->
+                <!--<img src="../static/images/prj1.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj2">-->
+                <!--<img src="../static/images/prj2.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj3">-->
+                <!--<img src="../static/images/prj3.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj4">-->
+                <!--<img src="../static/images/prj4.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj5">-->
+                <!--<img src="../static/images/prj5.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj6">-->
+                <!--<img src="../static/images/prj6.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj7">-->
+                <!--<img src="../static/images/prj7.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="lightbox-target" id="prj8">-->
+                <!--<img src="../static/images/prj8.PNG"/>-->
+                <!--<a class="lightbox-close" href="#portfolio"></a>-->
+            <!--</div>-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="main_mix_content text-center sections">-->
+                        <!--<div class="head_title">-->
+                            <!--<h2>Projects & Testimonials</h2>-->
+                            <!--<p>Examples of completed projects</p>-->
+                        <!--</div>-->
+                        <!--<div class="main_mix_menu">-->
+                            <!--<ul>-->
+                                <!--<li class="btn btn-primary filter" data-filter="all">All</li>-->
+                                <!--<li class="btn btn-primary filter" data-filter=".cat1">Category_1</li>-->
+                                <!--<li class="btn btn-primary filter" data-filter=".cat2">Category_2</li>-->
+                                <!--<li class="btn btn-primary filter" data-filter=".cat3">Category_3</li>-->
+                                <!--<li class="btn btn-primary filter" data-filter=".cat4">Category_4</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
 
-                            <div id="mixcontent" class="mixcontent">
-                                <div class="col-md-3 mix cat1 no-padding">
-                                    <div class="single_mixi_portfolio">
-                                        <img src="../static/images/prj1.PNG"/>
-                                        <div class="mixi_portfolio_overlay">
-                                            <div class="overflow_hover_text">
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                                <a class="lightbox" href="#prj1">
-                                            <p>Description_prj1</p>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat2 no-padding">
-                                <div class="single_mixi_portfolio">
-                                    <img src="../static/images/prj2.PNG"/>
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""></a> &lt;!&ndash;<i class="lnr lnr-magnifier"></i>&ndash;&gt;-->
-                                            <a class="lightbox" href="#prj2">
-                                            <p>Description_prj2</p>
-                                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat1 cat4 no-padding">
-                                <div class="single_mixi_portfolio">
+                            <!--<div id="mixcontent" class="mixcontent">-->
+                                <!--<div class="col-md-3 mix cat1 no-padding">-->
+                                    <!--<div class="single_mixi_portfolio">-->
+                                        <!--<img src="../static/images/prj1.PNG"/>-->
+                                        <!--<div class="mixi_portfolio_overlay">-->
+                                            <!--<div class="overflow_hover_text">-->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                                <!--<a class="lightbox" href="#prj1">-->
+                                            <!--<p>Description_prj1</p>-->
+                                                <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat2 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
+                                    <!--<img src="../static/images/prj2.PNG"/>-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""></a> &lt;!&ndash;<i class="lnr lnr-magnifier"></i>&ndash;&gt;&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj2">-->
+                                            <!--<p>Description_prj2</p>-->
+                                                <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat1 cat4 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
 
-                                    <img src="../static/images/prj3.PNG" alt="" />
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj3">
-                                            <p>Description_prj3</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat3 cat4 no-padding">
-                                <div class="single_mixi_portfolio">
-                                    <img src="../static/images/prj4.PNG" alt="" />
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj4">
-                                            <p>Description_prj4</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat4 no-padding">
-                                <div class="single_mixi_portfolio">
+                                    <!--<img src="../static/images/prj3.PNG" alt="" />-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj3">-->
+                                            <!--<p>Description_prj3</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat3 cat4 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
+                                    <!--<img src="../static/images/prj4.PNG" alt="" />-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj4">-->
+                                            <!--<p>Description_prj4</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat4 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
 
-                                    <img src="../static/images/prj5.PNG" alt="" />
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj5">
-                                            <p>Description_prj5</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat1 cat2 no-padding">
-                                <div class="single_mixi_portfolio">
-                                    <img src="../static/images/prj6.PNG" alt="" />
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj6">
-                                            <p>Description_prj6</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat1 cat2 no-padding">
-                                <div class="single_mixi_portfolio">
+                                    <!--<img src="../static/images/prj5.PNG" alt="" />-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj5">-->
+                                            <!--<p>Description_prj5</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat1 cat2 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
+                                    <!--<img src="../static/images/prj6.PNG" alt="" />-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj6">-->
+                                            <!--<p>Description_prj6</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat1 cat2 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
 
-                                    <img src="../static/images/prj7.PNG" alt="" />
+                                    <!--<img src="../static/images/prj7.PNG" alt="" />-->
 
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj7">
-                                            <p>Description_prj7</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mix cat1 cat2 no-padding">
-                                <div class="single_mixi_portfolio">
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj7">-->
+                                            <!--<p>Description_prj7</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-3 mix cat1 cat2 no-padding">-->
+                                <!--<div class="single_mixi_portfolio">-->
 
-                                    <img src="../static/images/prj8.PNG" alt="" />
-                                    <div class="mixi_portfolio_overlay">
-                                        <div class="overflow_hover_text"> 
-                                            <!--<a href=""><i class="lnr lnr-magnifier"></i></a>-->
-                                            <a class="lightbox" href="#prj8">
-                                            <p>Description_prj8</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    <!--<img src="../static/images/prj8.PNG" alt="" />-->
+                                    <!--<div class="mixi_portfolio_overlay">-->
+                                        <!--<div class="overflow_hover_text"> -->
+                                            <!--&lt;!&ndash;<a href=""><i class="lnr lnr-magnifier"></i></a>&ndash;&gt;-->
+                                            <!--<a class="lightbox" href="#prj8">-->
+                                            <!--<p>Description_prj8</p>-->
+                                            <!--</a>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class="gap"></div>
-                        </div>
-                    </div>                     
-                </div>
-            </div>
-        </section> <!-- End of portfolio two Section -->
+                            <!--<div class="gap"></div>-->
+                        <!--</div>-->
+                    <!--</div>                     -->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section> &lt;!&ndash; End of portfolio two Section &ndash;&gt;-->
 
 
 
-        <section id="counter" class="counter">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_counter sections text-center">
-                            <div class="col-sm-10 col-sm-offset-1">
-                                <div class="row">
-                                    <div class="col-sm-3 col-xs-12">
-                                        <div class="single_counter_right">
-                                            <i class="lnr lnr-users"></i>
-                                            <h2 class="statistic-counter">3,800</h2>
-                                            <p>Metric_1</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-12">
-                                        <div class="single_counter_right">
-                                            <i class="fa fa-line-chart"></i>
-                                            <h2 class="statistic-counter">4510</h2>
-                                            <p>Metric_2</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-12">
-                                        <div class="single_counter_right">
-                                            <i class="lnr lnr-heart"></i>
-                                            <h2 class="statistic-counter">2,800</h2>
-                                            <p>Metric_3</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-xs-12">
-                                        <div class="single_counter_right">
-                                            <i class="lnr lnr-gift"></i>
-                                            <h2 class="statistic-counter">5,500</h2>
-                                            <p>Metric_4</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!--<section id="counter" class="counter">-->
+            <!--<div class="overlay">-->
+                <!--<div class="container">-->
+                    <!--<div class="head_title text-center">-->
+                            <!--<h2 class="h2_white">About Us</h2>-->
+                        <!--</div>-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="main_counter sections text-center">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="col-sm-10 col-sm-offset-1">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-sm-3 col-xs-12">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="single_counter_right">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<i class="lnr lnr-users"></i>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<h2 class="statistic-counter">3,800</h2>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p>Metric_1</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-sm-3 col-xs-12">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="single_counter_right">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<i class="fa fa-line-chart"></i>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<h2 class="statistic-counter">4510</h2>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p>Metric_2</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-sm-3 col-xs-12">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="single_counter_right">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<i class="lnr lnr-heart"></i>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<h2 class="statistic-counter">2,800</h2>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p>Metric_3</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="col-sm-3 col-xs-12">&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<div class="single_counter_right">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<i class="lnr lnr-gift"></i>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<h2 class="statistic-counter">5,500</h2>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;<p>Metric_4</p>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</section>-->
 
 
 <section id="contact" class="contact">
@@ -412,7 +426,7 @@
                 <div class="row">
                     <div class="main_contact sections">
                         <div class="head_title text-center">
-                            <h2>Let's work together</h2>
+                            <h2>Contact Us</h2>
                         </div>
 
                         <div class="row">
@@ -422,7 +436,7 @@
                                     <!--<h4>Leave A Message</h4>-->
                                     <!--<div class="single_contant_left">-->
                                         <!--<form action="#" id="formid">-->
-                                            <!--&lt;!&ndash;<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">&ndash;&gt;-->
+                                            <!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
 
                                             <!--<div class="form-group">-->
                                                 <!--<input type="text" class="form-control" name="name" placeholder="Name" required="">-->
@@ -439,21 +453,21 @@
                                             <!--<div class="">-->
                                                 <!--<input type="submit" value="Send" class="btn btn-primary">-->
                                             <!--</div>-->
-                                            <!--&lt;!&ndash;</div>&ndash;&gt; -->
+                                            <!--</div>-->
                                         <!--</form>-->
                                     <!--</div>-->
                                 <!--</div>-->
 
-
+<!--<div class="col-sm-5 col-sm-offset-1 col-xs-12">-->
                                     <div class="single_message_right_info">
                                         <!--<h4>Contact Us</h4>-->
                                         <ul>
-                                            <li><a href=""><i class="fa fa-home"></i>Address_1</a></li>
-                                            <li><a href=""><i class="fa fa-phone"></i>PhoneNumber_1</a></li>
-
-                                            <li><a href=""><i class="fa fa-envelope"></i>Email_1</a></li>
+                                            <li><i class="fa fa-home"></i>Hours of Operation: Monday-Friday 8:00 a.m. – 6:00 p.m. (CST)</li>
+                                            <li><i class="fa fa-phone"></i>(608) 609-0190</li>
+                                            <li><i class="fa fa-envelope"></i><a href="" id="emailaddy"><u>Email</u></a></li>
                                         </ul>
                                     </div>
+<!--</div>-->
                             </div> <!-- End of messsage contant-->
                         </div>
                     </div>

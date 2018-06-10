@@ -25,10 +25,10 @@ jQuery(document).ready(function ($) {
      * WOW
      ---------------------------------------------*/
 
-    var wow = new WOW({
-        mobile: false // trigger animations on mobile devices (default is true)
-    });
-    wow.init();
+//    var wow = new WOW({
+//        mobile: false // trigger animations on mobile devices (default is true)
+//    });
+//    wow.init();
 
 
     /*---------------------------------------------*
@@ -106,6 +106,7 @@ jQuery(document).ready(function ($) {
             effects: 'fade rotateX(-45deg) translateY(-10%)'
         }
     });
+
 
 
 

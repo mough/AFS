@@ -538,7 +538,7 @@ input::-ms-input-placeholder {
     color: #fff;
 }
 .navbar-brand>img {
-    max-width: 80%;
+    max-width: 15%;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
     background-color:transparent;
@@ -554,6 +554,7 @@ input::-ms-input-placeholder {
 
 .home .main_home{
     padding-top: 250px;
+    text-align: center;
 }
 
 .home .main_home h1{
@@ -565,6 +566,13 @@ input::-ms-input-placeholder {
     padding-bottom: 25px;
     font-family: 'latolight';
     font-size:2.0625rem;
+	line-height:3rem;
+}
+.home .main_home p.subtitle_small{
+    color: #fff;
+    padding-bottom: 25px;
+    font-family: 'latolight';
+    font-size:1.0625rem;
 	line-height:3rem;
 }
 
@@ -627,6 +635,10 @@ input::-ms-input-placeholder {
     font-size:3.125rem;
     color:#223d61;
 }
+.head_title h2_white{
+    font-size:3.125rem;
+    color: #fff;
+}
 .head_title p{
     font-size:1rem;
 }
@@ -637,7 +649,7 @@ input::-ms-input-placeholder {
 .main_service_area{}
 .main_service_area .signle_service_left{}
 .main_service_area .signle_service_left h2{
-    font-size: 7.964375rem;
+    font-size: 5.964375rem;
     line-height: 10rem;
     color: #e1e1e1;
     max-width: 60%;   
